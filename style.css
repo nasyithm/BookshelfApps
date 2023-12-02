@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Dosis", sans-serif;
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #0e8388;
+}
+
+label,
+p {
+  font-size: 18px;
+}
+
+.head-bar {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0e8388;
+  color: #ffffff;
+}
+
+.input-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info-container {
+  max-width: 600px;
+  padding: 10px;
+}
+
+.info-container > blockquote {
+  padding: 30px 30px;
+}
+
+.info-container > blockquote > q {
+  display: block;
+  padding: 5px;
+}
+
+.input-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #0e8388;
+  border-radius: 5px;
+}
+
+.input-container > h2 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.input-container > form > .input {
+  margin: 8px 0;
+}
+
+.input-container > form > button {
+  background-color: #0e8388;
+  color: #ffffff;
+  margin: 8px 0;
+  border: 1px solid #0e8388;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container > form > button:hover {
+  background-color: #2e4f4f;
+  border: 1px solid #2e4f4f;
+  color: #ffffff;
+}
+
+.input-container > form > button > span {
+  font-weight: bold;
+}
+
+.input-container > form > .input > input {
+  display: block;
+  margin-block: 5px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #0e8388;
+  border-radius: 5px;
+}
+
+.input-container > form > .input > input:focus {
+  outline-color: #0e8388;
+}
+
+.input-container > form > .input-inline > input {
+  margin-inline: 5px;
+}
+
+.search-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-section > h2 {
+  padding-bottom: 10px;
+}
+
+.search-section > form > input {
+  max-width: 400px;
+  width: 100%;
+  margin-inline: 5px;
+  padding: 8px;
+  border: 1px solid #0e8388;
+  border-radius: 5px;
+}
+
+.search-section > form > input:focus {
+  outline-color: #0e8388;
+}
+
+.search-section > form > button {
+  background-color: #0e8388;
+  color: #ffffff;
+  padding: 8px 10px;
+  border: 1px solid #0e8388;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.search-section > form > button:hover {
+  background-color: #2e4f4f;
+  border: 1px solid #2e4f4f;
+}
+
+.bookshelf {
+  margin: auto;
+  max-width: 1024px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bookshelf > h2 {
+  padding-bottom: 10px;
+}
+
+.bookshelf > .book-list > .book-item {
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #0e8388;
+  border-radius: 10px;
+}
+
+.bookshelf > .book-list > .book-item > .book-data {
+  text-align: left;
+}
+
+.bookshelf > .book-list > .book-item > .book-data > h3 {
+  font-size: 25px;
+}
+
+.bookshelf > .book-list > .book-item > .book-action {
+  width: 90px;
+  margin-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookshelf > .book-list > .book-item > .book-action > .check-button,
+.undo-button {
+  font-size: 30px;
+  background-color: transparent;
+  color: green;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.bookshelf > .book-list > .book-item > .book-action > .check-button:hover,
+.undo-button:hover {
+  font-size: 40px;
+}
+
+.bookshelf > .book-list > .book-item > .book-action > .trash-button {
+  font-size: 30px;
+  background-color: transparent;
+  color: red;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.bookshelf > .book-list > .book-item > .book-action > .trash-button:hover {
+  font-size: 40px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #0e8388;
+}
+
+@media screen and (max-width: 768px) {
+  .input-section {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info-container {
+    text-align: center;
+  }
+
+  .info-container > blockquote {
+    display: none;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .bookshelf {
+    width: 100%;
+  }
+}
